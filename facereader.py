@@ -22,11 +22,11 @@ predictor = dlib.shape_predictor(predictor_path)
 while True:
 	ret,frame = cap.read()
 	#cap.stop()
-        
-	img = frame
+        frame = imutils.resize(frame, width=500)
+        img = cv2.cvtColor(frame,cv2.COLOR_BGR2GRAY)
 	rects =detector(img,0)
         for rect in rects:
-            cv2.rectangle(img,(rect.left(),rect.top()),(rect.right(),rect.bottom()),(0,255,0),3)
+            cv2.rectangle(frame,(rect.left(),rect.top()),(rect.right(),rect.bottom()),(0,255,0),3)
 	    shape = predictor(img,rect)
 	    shape = face_utils.shape_to_np(shape)
 	    leftEye = shape[lStart:lEnd]
