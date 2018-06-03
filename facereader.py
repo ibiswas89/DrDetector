@@ -42,7 +42,7 @@ while True:
             cv2.drawContours(frame,[rightEye],-1, (0,255,10), 1)
             print AAR 
             if AAR < 0.27:
-                cv2.putText(frame, "****************ALERT!****************", (10, 30),
+                cv2.putText(frame, "****************ALERT! EYES CLOSED****************", (10, 30),
 					cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 0, 255), 2)
 	#print np.shape(shape)
         
