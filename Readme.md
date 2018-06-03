@@ -8,11 +8,10 @@ The example code is in Python (version 2.7 or higher will work).
 
 # Dependencies
 
-import cv2
-import immutils
-import dlib
-import scipy
-Description
+1. import cv2
+2. import immutils
+3. import dlib
+4. import scipy
 
 
 # Algorithm
