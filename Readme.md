@@ -19,5 +19,8 @@ The example code is in Python (version 2.7 or higher will work).
 
 # Algorithm
 
-Each eye is represented by 6 (x, y)-coordinates, starting at the left-corner of the eye (as if you were looking at the person), and then working clockwise around the eye:
+Each eye is represented by 6 (x, y)-coordinates, starting at the left-corner of the eye (as if you were looking at the person), and then working clockwise around the eye.
+We calculate the eye aspect ratio for each eye and average it out for both eyes.
+If average eye aspect ratio is less than threshold then user is alerted
+
 
