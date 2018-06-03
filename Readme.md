@@ -1,5 +1,5 @@
 # Drowsiness Detection OpenCV
-This is a implementation of Drowsiness_Detection
+This is a implementation of Drowsiness_Detection.
 Original repo can be found at 
 https://github.com/akshaybahadur21/Drowsiness_Detection
 
